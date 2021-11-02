@@ -1,0 +1,106 @@
+*{
+    background-color: gray;
+}
+
+
+
+.container{
+    background-color: gray;
+}
+
+h1{
+    text-align: center;
+}
+
+.hover, 
+.rotate, 
+.translateX, 
+.translateY, 
+.threeD, 
+.skew,
+.scale{
+    width: 100px;
+    line-height: 0;
+    padding:50px 0;
+    margin:50px auto;
+    background-color: black;
+    border-radius:50%;
+    cursor:pointer;
+    color:white;
+    /*properties you want to transation*/
+transition-property:color, background-color, transform;
+/* /*how long you want the element to transition from start to finish*/
+transition-duration: 2s;
+/*how long until the transition begins */
+transition-delay: 2s;
+/*how we want our element to transition ease, ease in, ease out, ease in and out*/
+    transition-time-function:ease-in;}
+.a{
+    float: right;
+    margin: 7px;
+}
+.nav a{
+
+    font-size: 20px;
+    overflow:visible;
+    bottom: 10;
+    width: 100%;
+    padding: 15px;
+    float:left ;
+}
+
+
+.hover:hover{
+    color:gray;
+    background-color: indigo;
+    width: 250px;
+    transition-duration: 2s;
+    transition-delay: .3s;
+    transition-timing-function: ease-out;
+}
+
+.rotate:hover{
+    color:gray;
+    background-color: indigo;
+    width: 250px;
+    transition-duration: 2s;
+    transition-delay: .3s;
+    transition-timing-function: ease-out;
+    transform: rotate(360deg);
+}
+.skew:hover{
+    color:gray;
+    background-color: indigo;
+    transform: skew(25deg);
+
+}
+.scale:hover{
+    color:gray;
+    background-color: indigo;
+    transform:scale(1.5);
+    transition-delay: .3;
+    transition-duration: 2s;
+}
+.threeD:hover{
+    color:gray;
+    background-color:indigo;
+    transform:rotate3d(1, 1, 1,360deg);
+    transition-delay: .3s;
+    transition-duration: 2s;
+}
+.translateX:hover{
+    color:gray;
+    background-color: indigo;
+    transform:translateX(30px);
+    transition-delay: .3;
+    transition-duration: 2s;
+}
+.translateY:hover{
+    color:gray;
+    background-color: indigo;
+    transform:translateY(30px);
+    transition-delay: .3;
+    transition-duration: 2s;
+}
+
+

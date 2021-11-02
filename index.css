@@ -1,0 +1,52 @@
+*{
+    background-color: gray;
+    color:black;
+}
+h1:hover{
+    text-align: center;
+    font-family: 'Ceviche One', cursive;
+    font-family: 'Fugaz One', cursive;
+    transition-duration: 2s;
+    transition-delay: .3s;
+    transition-timing-function: ease-out;
+    transform: rotate(360deg);
+    animation-direction: alternate-reverse;
+    animation-play-state: inherit;
+
+}
+a{
+    float: right;
+    margin: 7px;
+}
+.nav a{
+
+    font-size: 20px;
+    overflow:visible;
+    bottom: 10;
+    width: 100%;
+    padding: 15px;
+    float: right ;
+}
+h2:hover{
+    text-align: center;
+    font-family: 'Ceviche One', cursive;
+    font-family: 'Fugaz One', cursive;
+    color: red;
+}
+p:hover{
+    font-family:'Fugaz One', cursive;
+    font-size: 28px;
+    transform-style: preserve-3d;
+    transform-box:inherit;
+    transition-timing-function: ease-in;
+    transition-delay: .3s;
+    transform: rotate(360deg);
+
+    
+}
+img{
+    
+    height: 150px;
+    width: 150px;
+    
+}

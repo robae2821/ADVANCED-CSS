@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="selector.css">
+    <title>Selectors</title>
+    <style>
+        .section1 h1 {
+            color:green;
+        }
+        h1 {
+            color:red;
+        }
+        p {
+            font-size: 25px;
+        }
+        .section2 > h1 {
+            color:blue
+        }
+        .section2 +p{
+            font-size: 20px;
+        }
+        .section2 ul li {
+            color:pink;
+            font-size: 30px;
+            list-style-type: none;
+            transition-property: all;
+            transition-duration:4s;
+        }
+        .section2 ul li:hover {
+            color:black;
+            transform:translateX(40px)
+        }
+        .section2 ul  .Spanish:hover {
+            color:green;
+            transform: translateX(-40px);
+
+        }
+        p::first-letter{
+            color:limegreen;
+            font-size: 50px;
+        }
+        p::selection{
+            color: red;
+            background-color: yellow;
+        }
+        .section3 > h1 {
+            color:purple;
+        }
+        .section3 +p{
+            font-size: 30px;
+        }
+        .section3 ul li {
+            color:gray;
+            font-size: 23px;
+            list-style-type: none;
+            animation-duration: 3s;
+            transform: translate3d(1, 1, 1, 360deg);
+        }
+        .section3 ul li:hover {
+            color:black;
+            transform:translate3d(1, 1, 1, 360deg);
+            
+        }
+
+
+        
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="nav" href="index.html">Home Page</a>
+            <a class="nav" href="Animation.html">Animation</a>
+            <a class="nav" href="circle.html">Circle</a>
+        </nav>
+    </header>
+    
+    <div class="section1">
+        <h1> Hello World!</h1>
+        <p>This is the English Language</p>
+    </div>
+    <h1>Hola Mundo!</h1>
+    <p>This is the Spanish Language.</p>
+    <!--make style changes 5 to this div's <p>
+            include a transform-->
+    <!--make style changes to the <li> in this div
+                make seperate style changes to the 
+            'spanish' class <li>-->
+    <div class="section2">
+        <h1>Bonjour le Monde!</h1>
+        <p>This is the French Language.</p>
+        <ul>
+            <li>4 Languages of the World</li>
+            <li>English</li>
+            <li class="Spanish">Spanish</li>
+            <li>French</li>
+            <li>Arabic</li>
+        </ul>
+    </div>
+    <!--make style changes to this div's <p> tag and
+        <ul> tag. Include an animation on the <li>-->
+    <div class="section3">
+        <h1>مرحبا بالعالم</h1>
+        <p>This is the Arabic Language. </p>
+        <ul>
+            <li>4 Languages of the World</li>
+            <li>English</li>
+            <li> Spanish</li>
+            <li>French</li>
+            <li>Arabic</li>
+        </ul>
+    </div>
+</body>
+
+
+</html>
